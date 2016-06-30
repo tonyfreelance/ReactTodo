@@ -2,10 +2,10 @@ import firebase from 'firebase';
 
 try {
     var config = {
-        apiKey: "AIzaSyCtTrLBAgZiVo44CgLTlkD9iEe2fRgdGm4",
-        authDomain: "mean-web-development-1171.firebaseapp.com",
-        databaseURL: "https://mean-web-development-1171.firebaseio.com",
-        storageBucket: "mean-web-development-1171.appspot.com",
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTH_DOMAIN,
+        databaseURL: process.env.DATABASE_URL,
+        storageBucket: process.env.STORAGE_BUCKET,
     };
 
     firebase.initializeApp(config);
