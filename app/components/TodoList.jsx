@@ -1,7 +1,5 @@
 var React = require("react");
-var {
-    connect
-} = require("react-redux");
+var {connect} = require("react-redux");
 var Todo = require("Todo");
 var TodoAPI = require("TodoAPI");
 
@@ -16,7 +14,7 @@ var TodoList = React.createClass({
             }
 
             return TodoAPI.filterTodos(todos, showCompleted, searchText).map((todo) => {
-                return <Todo key={todo.id} {...todo} onToggle={this.props.onToggle}/>;
+                return <Todo key={todo.id} {...todo}/>;
             });
         };
 
